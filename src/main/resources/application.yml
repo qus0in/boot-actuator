@@ -1,1 +1,10 @@
-spring.application.name=boot-actuator
+spring:
+  application:
+    name: boot-actuator
+management:
+  endpoints:
+    web:
+      exposure:
+#        include: health
+        include: health, metrics
+#        include: "*"
